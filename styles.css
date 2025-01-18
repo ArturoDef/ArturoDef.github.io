@@ -1,0 +1,55 @@
+
+div.tafel{
+  width: fit-content;
+}
+table.tafel {
+    border: 1px solid black;
+    font-size: 2em;
+    width: 7em;
+}
+
+table.tafel td {
+    padding-right: 0.3em;
+    text-align: right;
+}
+
+table.tafel td.tdeqr {
+    width : 1em;
+}
+
+div.headerTafel span{
+    background-color: beige;
+    border: 1px solid black;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+button.btnEraseResult{
+    width: 7em;
+    margin-top:5px;
+}
+
+div.tafelImage{
+  display: inline-block;
+  padding-top: 0.4em;
+  margin-left: 50px;
+}
+
+div.tafelImage .box{
+    background-color : black;
+    padding : 10 10 0 10;
+    width : 1.5em;
+    height : 0.8em;
+    margin : 0.1em;
+    display : inline-block;
+}
+
+div.tafelImage .bag{
+    border-color : black;
+    padding : 5px;
+    margin-bottom : 0.4em;    
+}
+
+#tafels tr {
+
+}
