@@ -115,10 +115,6 @@ function createTable(tafel){
     }
 }
 
-function createTables(){
-   // createTable(2);
-   // createTable(3);    
-}
 
 function hideResult(tafel){
     tds = document.querySelectorAll("#tafelvan"+tafel+" .tdeqr span");
@@ -175,3 +171,9 @@ function createButtonEl(){
  function createTheadEl(){
     return document.createElement("thead");
  }
+
+ function createTables(){
+   // createTable(2);
+   // createTable(3);    
+   createTable(4);       
+}
