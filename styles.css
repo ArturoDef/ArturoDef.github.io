@@ -10,12 +10,14 @@
     padding : 10 0 10 0;   
     width: 100%;
     text-align: center;
+    font-size: 2rem;
 }
 
 #header button{
-    width: 3em;
     margin-right: 15px;
     text-align: center;
+    vertical-align: middle;   
+    width: 2rem; 
 }
 
 
