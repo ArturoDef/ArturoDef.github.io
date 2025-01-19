@@ -1,3 +1,19 @@
+#title{
+    border-bottom: 6px double black;
+    width: fit-content;
+    background-color: aquamarine;
+    accent-color: ;
+    border-top: 6px double black;    
+}
+#header{
+    padding : 10 0 10 0;   
+}
+
+#header button{
+    width: 3em;
+    margin-right: 15px;
+    text-align: center;
+}
 
 div.tafel{
   width: fit-content;

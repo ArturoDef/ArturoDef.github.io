@@ -4,7 +4,19 @@
         <link rel="StyleSheet" href="styles.css" type="text/css"/>  
     </head>
     <body onload="createTables();">
-        <div id="header"></div>
+        <H1 id="title">De tafels van vermenigvuldiging leren</H1>
+        <div id="header">
+            <div id="keuze">Maak je keuze: 
+                <button type="button" onclick="createTable(2);">2</button>
+                <button type="button" onclick="createTable(3);">3</button>
+                <button type="button" onclick="createTable(4);">4</button>                
+                <button type="button" onclick="createTable(5);">5</button>                
+                <button type="button" onclick="createTable(6);">6</button>                
+                <button type="button" onclick="createTable(7);">7</button>                
+                <button type="button" onclick="createTable(8);">8</button>                                
+                <button type="button" onclick="createTable(9);">9</button>                                
+            </div>
+        </div>
         <div id="tafelsContent"></div>
         <!-- table id="tafels" cellspacing="0" cellpadding="0">
             <tr>

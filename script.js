@@ -3,6 +3,7 @@ function createTafelSqueleton(tafel){
     tablemain = document.createElement("table");
     tablemain.id = "tafels";
     main = document.querySelector("#tafelsContent");
+    main.innerHTML = "";
     main.appendChild(tablemain);
 
 
