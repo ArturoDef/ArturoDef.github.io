@@ -1,3 +1,4 @@
+let btnOnOff = true;
 
 function createTafelSqueleton(tafel){
     tablemain = document.createElement("table");
@@ -88,7 +89,7 @@ function createTable(tafel){
 
         spaneqr = document.createElement("span");
         spaneqr.innerHTML = tafel*i ;
-
+        spaneqr.id = "spaneqr"+i;
         tdeqr.appendChild(spaneqr);
 
         tdbtn = document.createElement("td");
@@ -118,14 +119,21 @@ function createTable(tafel){
 
 
 function hideResult(tafel){
+    btnOnOff = !btnOnOff;
     tds = document.querySelectorAll("#tafelvan"+tafel+" .tdeqr span");
     tds.forEach(span =>{
-        span.style.display == "non"
-        span.style.display = span.style.display == "none"?"block":"none";
+        span.style.display = btnOnOff?"block":"none";
     });
 }
 
 function displayImage(fact0,tafel){
+    if(!btnOnOff){
+        btnOnOff = true;        
+        hideResult(tafel);
+    }
+    spaneqr = document.querySelector("#spaneqr"+fact0);
+    spaneqr.innerHTML = fact0*tafel;
+    spaneqr.style.display ="inline";    
     divVanTafelImg = document.querySelector("#divVan"+tafel+"Image");
     divVanTafelImg.innerHTML = "";
     product = fact0*tafel;
