@@ -1,18 +1,27 @@
 #title{
     border-bottom: 6px double black;
-    width: fit-content;
+    width: 100%;
     background-color: aquamarine;
     accent-color: ;
     border-top: 6px double black;    
+    text-align: center;
 }
 #header{
     padding : 10 0 10 0;   
+    width: 100%;
+    text-align: center;
 }
 
 #header button{
     width: 3em;
     margin-right: 15px;
     text-align: center;
+}
+
+
+#tafelsContent{
+    width:100%;
+    text-align:center;
 }
 
 div.tafel{
@@ -33,11 +42,16 @@ table.tafel td.tdeqr {
     width : 1em;
 }
 
+div.headerTafel{
+    text-align: center;
+}
+
 div.headerTafel span{
     background-color: beige;
     border: 1px solid black;
     font-size: 2em;
     font-weight: bold;
+    padding: 0 2% 0 2%
 }
 
 button.btnEraseResult{
@@ -66,6 +80,9 @@ div.tafelImage .bag{
     margin-bottom : 0.4em;    
 }
 
+#tafels {
+    display: inline;
+}
 #tafels tr {
 
 }
