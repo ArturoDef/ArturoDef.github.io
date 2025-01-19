@@ -84,6 +84,13 @@ div.tafelImage .bag{
     margin-bottom : 0.4em;    
 }
 
+table.tafel {
+    font-size: 2em;
+}
+
+table.tafel button{
+    font-size: 1em;
+}
 #tafels {
     display: inline;
 }
