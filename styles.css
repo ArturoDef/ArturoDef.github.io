@@ -30,16 +30,20 @@
 
 div.tafel{
   width: fit-content;
+
 }
 table.tafel {
-    border: 1px solid black;
+    border-left: 1px solid black;    
     font-size: 2em;
     width: 7em;
+
 }
 
 table.tafel td {
     padding-right: 0.3em;
     text-align: right;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 table.tafel td.tdeqr {
@@ -61,6 +65,8 @@ div.headerTafel span{
 button.btnEraseResult{
     width: 7em;
     margin-top:5px;
+    margin-left:40px;
+    font-size: 1.5em;
 }
 
 div.tafelImage{
@@ -69,31 +75,50 @@ div.tafelImage{
   margin-left: 50px;
 }
 
-div.tafelImage .box{
+div.bag .box{
     background-color : black;
-    padding : 10 10 0 10;
+    padding : 10 20 0 10;
     width : 1.5em;
     height : 0.8em;
-    margin : 0.1em;
-    display : inline-block;
+    margin : 0.3em;
+    display : inline;
 }
 
 div.tafelImage .bag{
     border-color : black;
     padding : 8px;
-    margin-bottom : 0.4em;    
+    margin-  : 0.4em;    
 }
 
 table.tafel {
     font-size: 2em;
+    border-left: 1px solid black;
 }
+
+table.tafel td.bottom{
+    border-bottom: 1px solid black;
+}
+
+table.tafel td.top{
+    border-top: 1px solid black;
+}
+
 
 table.tafel button{
     font-size: 1em;
 }
+
+td.tdButtondisplay{
+    border-right: 1px solid black;
+}
+
 #tafels {
     display: inline;
 }
+
 #tafels tr {
 
+}
+td.tdImage {
+    padding-left: 50px;
 }

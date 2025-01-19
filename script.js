@@ -30,6 +30,7 @@ function createTafelSqueleton(tafel){
     table = createTableEl();
     table.id="tafelvan"+tafel; 
     table.className = "tafel";
+    table.cellSpacing = "0";
     thead = createTheadEl();
     tbody = createTbodyEl();
     table.appendChild(thead);
@@ -39,7 +40,6 @@ function createTafelSqueleton(tafel){
     divTafel.appendChild(table);
 
     divButton = createDivEl();
-    divButton.style.textAlign = "center";
 
     btn = createButtonEl();
     btn.tafel = tafel;
@@ -74,7 +74,6 @@ function createTable(tafel){
 
         tdi = document.createElement("td");
         tdi.innerHTML = i;
-
         tdx = document.createElement("td");
         tdx.innerHTML= "x" ;
 
@@ -98,6 +97,7 @@ function createTable(tafel){
         btn.id = "btn_"+i+"_"+tafel;
         btn.idx = i;
         btn.tafel = tafel;
+        tdbtn.className =  "tdButtonDisplay";
         btn.addEventListener("click", function btnClick(event) { 
             btn = event.srcElement;            
             displayImage(btn.idx,btn.tafel);
@@ -112,6 +112,19 @@ function createTable(tafel){
         tr.appendChild(tdeq);               
         tr.appendChild(tdeqr);                
         tr.appendChild(tdbtn);                
+
+        tdList = tr.querySelectorAll("td");
+        tdList.forEach(td=>{
+            if(i==1)
+                td.className = td.className+" top";
+            if(i==10)
+                td.className = td.className+" bottom";        
+        });
+
+        tdImage = document.createElement("td");
+        tdImage.id = "tdImage"+i;
+        tdImage.className = "tdImage";
+        tr.appendChild(tdImage);
 
         tbody.appendChild(tr);
     }
@@ -134,18 +147,21 @@ function displayImage(fact0,tafel){
     spaneqr = document.querySelector("#spaneqr"+fact0);
     spaneqr.innerHTML = fact0*tafel;
     spaneqr.style.display ="inline";    
-    divVanTafelImg = document.querySelector("#divVan"+tafel+"Image");
-    divVanTafelImg.innerHTML = "";
     product = fact0*tafel;
     for(bag = 0 ; bag < fact0; bag++ ){
         divBag = document.createElement("div");
         divBag.className = "bag";
+        
         for(i = 0; i<tafel; i++){
             div = document.createElement("div");
             div.className = "box";
+            div.innerHTML = "--"
             divBag.appendChild(div);
         }
-        divVanTafelImg.appendChild(divBag);
+        td = document.querySelector("#tdImage"+(bag+1));        
+        td.innerHTML = "";
+        td.appendChild(divBag);
+        //divVanTafelImg.appendChild(divBag);
     }
 
 }
