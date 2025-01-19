@@ -75,12 +75,13 @@ div.tafelImage{
 }
 
 div.bag .box{
-    background-color : black;
+    background-color : #6495ED;
     padding : 10 20 0 10;
-    width : 1.2em;
-    height : 0.8em;
+    width : 1em;
+    height : 1.2em;
     margin : 0 0.3em 0 0;
     display : inline-block;
+    border-radius: 50%;
 }
 
 div.tafel .bag{

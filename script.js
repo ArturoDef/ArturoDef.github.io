@@ -144,6 +144,10 @@ function displayImage(fact0,tafel){
         btnOnOff = true;        
         hideResult(tafel);
     }
+    tdImageList = document.querySelectorAll(".tafel td.tdImage");    
+    tdImageList.forEach(td=>{
+        td.innerHTML = "";
+    });
     spaneqr = document.querySelector("#spaneqr"+fact0);
     spaneqr.innerHTML = fact0*tafel;
     spaneqr.style.display ="inline";    
@@ -155,7 +159,7 @@ function displayImage(fact0,tafel){
         for(i = 0; i<tafel; i++){
             div = document.createElement("div");
             div.className = "box";
-            div.innerHTML = "--"
+            div.innerHTML = "&nbsp; &nbsp; &nbsp;"
             divBag.appendChild(div);
         }
         td = document.querySelector("#tdImage"+(bag+1));        
